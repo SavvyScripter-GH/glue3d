@@ -13,6 +13,7 @@ Glue3D is a custom scripting language for game and 3D project development, desig
     - [Docs](#docs)
     - [Wiki](#wiki)
 - [Categories](#categories)
+- [Examples](#examples)
 ---
 
 ## Features
@@ -24,7 +25,7 @@ Glue3D is a custom scripting language for game and 3D project development, desig
 
 ---
 
-## Module Categories
+## Module Categories <a name="categories"/></a>
 
 Glue3D is organized into easy-to-use prefixes so you always know what you are controlling:
 
@@ -51,7 +52,7 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 ---
 
 > [!TIP]
-> ## Help & Getting Started <a name="download"/>
+> ## Help & Getting Started <a name="download"/></a>
 > 
 > New to Glue3D? Here are a few tips to get you scripting quickly:
 > 
@@ -67,7 +68,7 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 >Community Wiki page can be found [**here**](https://wiki.glue3d.net/Main_Page)
 
 ---
-## Example Script
+## Example Script <a name="examples"/></a>
 
 Here is a basic example showing loops, game logic, and sound:
 
