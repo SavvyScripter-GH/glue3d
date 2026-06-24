@@ -2,9 +2,11 @@
 
 Glue3D is a custom scripting language for game and 3D project development, designed for clean structure and readable syntax.
 
-> [!IMPORTANT]
-> You need to use **Droplet Utils** to import `.glue3d` files. 
+> [!NOTE]
 > *Currently in Beta.*
+
+> [!IMPORTANT]
+> You need to use **Droplet Utils** to import `.glue3d` files.
 
 ---
 
@@ -59,17 +61,17 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 
 Here is a basic example showing loops, game logic, and sound:
 
-```glue3d
-// Basic example: Game Loop
-
-for i in range 10
-    game.start()
-    physics.physics_tick()
-    wait 1
-endfor
-
-// Check win condition
-if score > 100
-    sound.play(str "victory_chime")
-    terminal.print(str "You Win!", val 1)
-endif
+```js
+//vsc made with glue3d-vscode
+//
+//loops 10 times and prints var 'i' each time
+var i = val 0 
+var range = val 10 
+while (var i < var range) 
+    terminal.print(var i, val 20) 
+    var i += val 1 
+endwhile
+```
+<p align="center">
+  <img src="./icons/logo.png" alt="Alt Text">
+</p>
