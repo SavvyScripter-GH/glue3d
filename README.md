@@ -53,7 +53,7 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 
 > [!TIP]
 > ## Help & Getting Started <a name="download"/></a>
-> 
+> ###### I would reccomend you download Glue3D Community Edition from [**here**](https://github.com/Droplets21/Glue3D-Community-Edition) as it is frequently updated and has Glue3D-vscode Syntax support
 > New to Glue3D? Here are a few tips to get you scripting quickly:
 > 
 > 1.  **Use Autocomplete:** Start typing a module name (like `object.` or  `math.`) and the editor will show you all available commands and what they do.
