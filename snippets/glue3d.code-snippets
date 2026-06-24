@@ -1,0 +1,924 @@
+{
+    "File Name": {
+        "prefix": "File Name",
+        "body": [
+            "file.name(str ${1:script name})"
+        ],
+        "description": "sets the name of the .glue3d script in the editor"
+    },
+    "Val": {
+        "prefix": "val",
+        "body": [
+            "val ${1:value}"
+        ],
+        "description": "a value is a number"
+    },
+    "Var": {
+        "prefix": "var",
+        "body": [
+            "var ${1:variable_name}"
+        ],
+        "description": "a variable is a string or number"
+    },
+    "Str": {
+        "prefix": "str",
+        "body": [
+            "str ${1:string}"
+        ],
+        "description": "a string is text"
+    },
+    "Object Go To": {
+        "prefix": "object.go_to",
+        "body": [
+            "object.go_to(val x, val y, val z, val speed)"
+        ],
+        "description": "move object to coords"
+    },
+    "Object Go To Object": {
+        "prefix": "object.go_to_object",
+        "body": [
+            "object.go_to_object(str object, val speed)"
+        ],
+        "description": "move object to object"
+    },
+    "Object Move": {
+        "prefix": "object.move",
+        "body": [
+            "object.move(val value, val value , val value)"
+        ],
+        "description": "move object by values"
+    },
+    "Object Move Dir": {
+        "prefix": "object.move_dir",
+        "body": [
+            "object.move_dir(val dir, val distance)"
+        ],
+        "description": "move object in dir by distance"
+    },
+    "Object Rotate To": {
+        "prefix": "object.rotate_to",
+        "body": [
+            "object.rotate_to(val rx, val ry, val rz, val speed)"
+        ],
+        "description": "rotate object to dir"
+    },
+    "Object Rotate Toward": {
+        "prefix": "object.rotate_toward",
+        "body": [
+            "object.rotate_toward(str object, val speed)"
+        ],
+        "description": "rotate object to object"
+    },
+    "Object Turn": {
+        "prefix": "object.turn",
+        "body": [
+            "object.turn(val 0, val 0, val 0)"
+        ],
+        "description": "rotate object by values"
+    },
+    "Object Scale To": {
+        "prefix": "object.scale_to",
+        "body": [
+            "object.scale_to(val sx, val sy, val sz, val speed)"
+        ],
+        "description": "scale object to values"
+    },
+    "Object Distance": {
+        "prefix": "object.distance",
+        "body": [
+            "object.distance(str script)",
+            "var variable = data_return"
+        ],
+        "description": "distance to object"
+    },
+    "Object Clone": {
+        "prefix": "object.clone",
+        "body": [
+            "object.clone(str script)",
+            "var variable = data_return"
+        ],
+        "description": "clone script with object (data_return from Droplet Utils)"
+    },
+    "Object Delete": {
+        "prefix": "object.delete",
+        "body": [
+            "object.delete()"
+        ],
+        "description": "delete object"
+    },
+    "Object New Attribute": {
+        "prefix": "object.new_attribute",
+        "body": [
+            "object.new_attribute(str object, val name, val value)"
+        ],
+        "description": "assigns new attribute to object"
+    },
+    "Object Get Data": {
+        "prefix": "object.get_data",
+        "body": [
+            "object.get_data(str object, str data)",
+            "var variable = data_return"
+        ],
+        "description": "gets attribute from object"
+    },
+    "Object Edit Data": {
+        "prefix": "object.edit_data",
+        "body": [
+            "object.edit_data(str object, str data, val value)"
+        ],
+        "description": "edits attribute from object"
+    },
+    "Physics Include": {
+        "prefix": "physics.include_physics",
+        "body": [
+            "physics.include_physics()"
+        ],
+        "description": "allows physics to work"
+    },
+    "Physics Set Factors": {
+        "prefix": "physics.set_factors",
+        "body": [
+            "physics.set_factors(val gravity, val jump, val friction, val bounce)"
+        ],
+        "description": "physics simulation variables"
+    },
+    "Physics Hitbox": {
+        "prefix": "physics.hitbox",
+        "body": [
+            "physics.hitbox(val x, val y, val z)"
+        ],
+        "description": "set object hitbox"
+    },
+    "Physics Surface Collision": {
+        "prefix": "physics.surface_collision",
+        "body": [
+            "physics.surface_collision(str true)"
+        ],
+        "description": "idk"
+    },
+    "Physics Hitbox Collision": {
+        "prefix": "physics.hitbox_collision",
+        "body": [
+            "physics.hitbox_collision(str true)"
+        ],
+        "description": "idk"
+    },
+    "Physics Add Force": {
+        "prefix": "physics.add_force",
+        "body": [
+            "physics.add_force(str axis, val force)"
+        ],
+        "description": "idk"
+    },
+    "Physics Dir Force": {
+        "prefix": "physics.dir_force",
+        "body": [
+            "physics.dir_force(val direction, val distance)"
+        ],
+        "description": "idk"
+    },
+    "Physics On Floor": {
+        "prefix": "physics.on_floor",
+        "body": [
+            "physics.on_floor()",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Physics Collided": {
+        "prefix": "physics.collided",
+        "body": [
+            "physics.collided()",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Physics Tick": {
+        "prefix": "physics.physics_tick",
+        "body": [
+            "physics.physics_tick()"
+        ],
+        "description": "run pysics simulation"
+    },
+    "Model Set Model": {
+        "prefix": "model.set_model",
+        "body": [
+            "model.set_model(str model)"
+        ],
+        "description": "set objects model"
+    },
+    "Model Refresh": {
+        "prefix": "model.refresh_models",
+        "body": [
+            "model.refresh_models()"
+        ],
+        "description": "idk"
+    },
+    "Model Set Bone": {
+        "prefix": "model.set_bone",
+        "body": [
+            "model.set_bone(str bone)"
+        ],
+        "description": "idk"
+    },
+    "Model Rotate Bone": {
+        "prefix": "model.rotate_bone",
+        "body": [
+            "model.rotate_bone(val 0, val 0, val 0, str bone)"
+        ],
+        "description": "idk"
+    },
+    "Model Turn Bone": {
+        "prefix": "model.turn_bone",
+        "body": [
+            "model.turn_bone(val 0, val 0, val 0, str bone)"
+        ],
+        "description": "idk"
+    },
+    "Model Ease": {
+        "prefix": "model.ease",
+        "body": [
+            "model.ease(val value)"
+        ],
+        "description": "idk"
+    },
+    "Game Include": {
+        "prefix": "game.include_game",
+        "body": [
+            "game.include_game()"
+        ],
+        "description": "allows game to work"
+    },
+    "Game Movement Type": {
+        "prefix": "game.movement_type",
+        "body": [
+            "game.movement_type(str type)"
+        ],
+        "description": "idk"
+    },
+    "Game Movement": {
+        "prefix": "game.movement",
+        "body": [
+            "game.movement(val speed, val turn_speed)",
+            "physics.physics_tick()"
+        ],
+        "description": "idk"
+    },
+    "Game Key Pressed": {
+        "prefix": "game.key_pressed",
+        "body": [
+            "game.key_pressed(str key)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Game Get Key": {
+        "prefix": "game.get_key",
+        "body": [
+            "game.get_key()",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Game Set Camera": {
+        "prefix": "game.set_camera",
+        "body": [
+            "game.set_camera(str camera)"
+        ],
+        "description": "idk"
+    },
+    "Game Camera 1st": {
+        "prefix": "game.camera_1st",
+        "body": [
+            "game.camera_1st(str object, val elevation)"
+        ],
+        "description": "idk"
+    },
+    "Game Camera 3rd": {
+        "prefix": "game.camera_3rd",
+        "body": [
+            "game.camera_3rd(str object, val distance, val speed)"
+        ],
+        "description": "idk"
+    },
+    "Game FOV": {
+        "prefix": "game.fov",
+        "body": [
+            "game.fov(str fov)"
+        ],
+        "description": "idk"
+    },
+    "Math Random": {
+        "prefix": "math.random",
+        "body": [
+            "math.random(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "returns a random number between the inputs"
+    },
+    "Math Add": {
+        "prefix": "math.add",
+        "body": [
+            "math.add(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "adds the inputs"
+    },
+    "Math Subtract": {
+        "prefix": "math.subtract",
+        "body": [
+            "math.subtract(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "subtrcats the inputs"
+    },
+    "Math Multiply": {
+        "prefix": "math.multiply",
+        "body": [
+            "math.multiply(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "multiplies the inputs"
+    },
+    "Math Divide": {
+        "prefix": "math.divide",
+        "body": [
+            "math.divide(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "divides the inputs"
+    },
+    "Math Modulo": {
+        "prefix": "math.modulo",
+        "body": [
+            "math.modulo(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "remainder after dividing the inputs"
+    },
+    "Math Power": {
+        "prefix": "math.power",
+        "body": [
+            "math.power(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "takes a to the power of b"
+    },
+    "Math Sqrt": {
+        "prefix": "math.sqrt",
+        "body": [
+            "math.sqrt(val a)",
+            "var variable = data_return"
+        ],
+        "description": "takes a to the root of b"
+    },
+    "Math Interpolate": {
+        "prefix": "math.interpolate",
+        "body": [
+            "math.interpolate(val a, val b, val c)",
+            "var variable = data_return"
+        ],
+        "description": "interpolates from a to b by c"
+    },
+    "Math Clamp": {
+        "prefix": "math.clamp",
+        "body": [
+            "math.clamp(val a, val min, val max)",
+            "var variable = data_return"
+        ],
+        "description": "clamps a to the min and max"
+    },
+    "Math Sin": {
+        "prefix": "math.sin",
+        "body": [
+            "math.sin(val a)",
+            "var variable = data_return"
+        ],
+        "description": "sin"
+    },
+    "Math Cos": {
+        "prefix": "math.cos",
+        "body": [
+            "math.cos(val a)",
+            "var variable = data_return"
+        ],
+        "description": "cos"
+    },
+    "Math Tan": {
+        "prefix": "math.tan",
+        "body": [
+            "math.tan(val a)",
+            "var variable = data_return"
+        ],
+        "description": "tan"
+    },
+    "Math Log": {
+        "prefix": "math.log",
+        "body": [
+            "math.log(val a)",
+            "var variable = data_return"
+        ],
+        "description": "a = 10^log(a)"
+    },
+    "Math Asin": {
+        "prefix": "math.asin",
+        "body": [
+            "math.asin(val a)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Math Acos": {
+        "prefix": "math.acos",
+        "body": [
+            "math.acos(val a)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Math Atan": {
+        "prefix": "math.atan",
+        "body": [
+            "math.atan(val a)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Math Floor": {
+        "prefix": "math.floor",
+        "body": [
+            "math.floor(val a)",
+            "var variable = data_return"
+        ],
+        "description": "returns the value rounded down"
+    },
+    "Math Abs": {
+        "prefix": "math.abs",
+        "body": [
+            "math.abs(val a)",
+            "var variable = data_return"
+        ],
+        "description": "returns the absolute value"
+    },
+    "Math Letter": {
+        "prefix": "math.letter",
+        "body": [
+            "math.letter(val a, str b)",
+            "var variable = data_return"
+        ],
+        "description": "returns the index of a in b"
+    },
+    "Math Join": {
+        "prefix": "math.join",
+        "body": [
+            "math.join(str a, str b)",
+            "var variable = data_return"
+        ],
+        "description": "returns the inputs joined together"
+    },
+    "Math And": {
+        "prefix": "math.and",
+        "body": [
+            "math.and(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "returns true if a and b are true, false if one is false"
+    },
+    "Math Or": {
+        "prefix": "math.or",
+        "body": [
+            "math.or(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "returns true if a or b are true, false if both are false"
+    },
+    "Math Xor": {
+        "prefix": "math.xor",
+        "body": [
+            "math.xor(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "returns true if a or b are false, false if both are true"
+    },
+    "Math Not": {
+        "prefix": "math.not",
+        "body": [
+            "math.not(val a)",
+            "var variable = data_return"
+        ],
+        "description": "returns flipped input"
+    },
+    "Math Greater Than": {
+        "prefix": "math.greater_than",
+        "body": [
+            "math.greater_than(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Math Less Than": {
+        "prefix": "math.less_than",
+        "body": [
+            "math.less_than(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Math Equals": {
+        "prefix": "math.equals",
+        "body": [
+            "math.equals(val a, val b)",
+            "var variable = data_return"
+        ],
+        "description": "idk"
+    },
+    "Terminal Clear": {
+        "prefix": "terminal.clear",
+        "body": [
+            "terminal.clear()",
+        ],
+        "description": "clears the terminal"
+    },
+    "Terminal Print Str": {
+        "prefix": "terminal.print",
+        "body": [
+            "terminal.print(str hello_world, val color)",
+        ],
+        "description": "prints string in terminal"
+    },
+    "Terminal Print Var": {
+        "prefix": "terminal.print",
+        "body": [
+            "terminal.print(var variable, val color)",
+        ],
+        "description": "prints variable in terminal"
+    },
+    "Terminal Print Val": {
+        "prefix": "terminal.print",
+        "body": [
+            "terminal.print(val value, val color)",
+        ],
+        "description": "prints value in terminal"
+    },
+    "Variable": {
+        "prefix": "var",
+        "body": [
+            "var variable = val value",
+        ],
+        "description": "sets a variable"
+    },
+    "Variable data_return": {
+        "prefix": "var data_return",
+        "body": [
+            "var variable = data_return",
+        ],
+        "description": "sets data_return to input"
+    },
+    "Variable Increase": {
+        "prefix": "var increase",
+        "body": [
+            "var variable += val value",
+        ],
+        "description": "increases variable by input"
+    },
+    "Variable Decrease": {
+        "prefix": "var decrease",
+        "body": [
+            "var variable -= val value",
+        ],
+        "description": "decreases variable by input"
+    },
+    "Variable Multiply": {
+        "prefix": "var multiply",
+        "body": [
+            "var variable *= val value",
+        ],
+        "description": "multiplies variable by input"
+    },
+    "Variable Divide": {
+        "prefix": "var divide",
+        "body": [
+            "var variable /= val value",
+        ],
+        "description": "divides variable by input (from Droplet Utils)"
+    },
+    "List Create": {
+        "prefix": "list.create_list",
+        "body": [
+            "list.create_list(str name, str file)",
+        ],
+        "description": "creates a list"
+    },
+    "List Clear": {
+        "prefix": "list.clear",
+        "body": [
+            "list.clear(str name)",
+        ],
+        "description": "clears a list"
+    },
+    "List Add Item": {
+        "prefix": "list.add_item",
+        "body": [
+            "list.add_item(str listname, str value)",
+        ],
+        "description": "adds an item to a list"
+    },
+    "List Delete Item": {
+        "prefix": "list.delete_item",
+        "body": [
+            "list.delete_item(str list, val index)",
+        ],
+        "description": "removes an item from a list"
+    },
+    "List Read": {
+        "prefix": "list.read",
+        "body": [
+            "list.read(str list, val index)",
+            "var variable = data_return"
+        ],
+        "description": "reads an item at index from a list"
+    },
+    "List Read List": {
+        "prefix": "list.read_list",
+        "body": [
+            "list.read_list(str list)",
+            "var variable = data_return"
+        ],
+        "description": "reads a whole list"
+    },
+    "List Length": {
+        "prefix": "list.length",
+        "body": [
+            "list.length(str list)"
+        ],
+        "description": "returns length of list"
+    },
+    "Interface Set Id": {
+        "prefix": "interface.set_id",
+        "body": [
+            "interface.set_id(str costume_id)"
+        ],
+        "description": "sets interface costume to id"
+    },
+    "Interface Text": {
+        "prefix": "interface.text",
+        "body": [
+            "interface.text(str text)"
+        ],
+        "description": "sets interface text"
+    },
+    "Interface Set Pos": {
+        "prefix": "interface.set_pos",
+        "body": [
+            "interface.set_pos(val x, val y)"
+        ],
+        "description": "sets interface position"
+    },
+    "Interface Dir": {
+        "prefix": "interface.dir",
+        "body": [
+            "interface.dir(val direction)"
+        ],
+        "description": "sets interface rotation"
+    },
+    "Interface Scale": {
+        "prefix": "interface.scale",
+        "body": [
+            "interface.scale(val scale)"
+        ],
+        "description": "sets interface scale"
+    },
+    "Interface Get Mouse Axis": {
+        "prefix": "interface.get_mouse_axis",
+        "body": [
+            "interface.get_mouse_axis(str axis)",
+            "var variable = data_return" // SIXSEVEENN!
+        ],
+        "description": "sets interface scale"
+    },
+    "Interface Clickable": {
+        "prefix": "interface.clickable",
+        "body": [
+            "interface.clickable(str true)"
+        ],
+        "description": "sets interface to be clickable"
+    },
+    "Interface Clicked": {
+        "prefix": "interface.clicked",
+        "body": [
+            "interface.clicked()",
+            "var variable = data_return"
+        ],
+        "description": "returns if interface was clicked"
+    },
+    "Interface Set Ghost": {
+        "prefix": "interface.set_ghost",
+        "body": [
+            "interface.set_ghost(val value)"
+        ],
+        "description": "sets interface opacity"
+    },
+    "File Create": {
+        "prefix": "file.create_file",
+        "body": [
+            "file.create_file(str name, str true)",
+        ],
+        "description": "creates a file"
+    },
+    "File Delete": {
+        "prefix": "file.delete_file",
+        "body": [
+            "file.delete_file(str name)",
+        ],
+        "description": "deletes a file"
+    },
+    "File Move Item": {
+        "prefix": "file.move_item",
+        "body": [
+            "file.move_item(str name, str filename)",
+        ],
+        "description": "moves an item to a file"
+    },
+    "File Copy Item": {
+        "prefix": "file.copy_item",
+        "body": [
+            "file.copy_item(str name, str filename, str copyname)",
+        ],
+        "description": "copies an item to a file"
+    },
+    "File Delete Item": {
+        "prefix": "file.delete_item",
+        "body": [
+            "file.delete_item(str name)",
+        ],
+        "description": "removes an item from a file"
+    },
+    "File Create Item": {
+        "prefix": "file.create_item",
+        "body": [
+            "file.create_item(str type, str name, str file)"
+        ],
+        "description": "creates an item in a file"
+    },
+    "Sound Play": {
+        "prefix": "sound.play",
+        "body": [
+            "sound.play(str sound_name)"
+        ],
+        "description": "creates an item in a file"
+    },
+    "Sound Stereo": {
+        "prefix": "sound.stereo",
+        "body": [
+            "sound.stereo()"
+        ],
+        "description": "idk"
+    },
+    "Sound Mono": {
+        "prefix": "sound.mono",
+        "body": [
+            "sound.mono()"
+        ],
+        "description": "idk"
+    },
+    "Sound Play Advanced": {
+        "prefix": "sound.play_advanced",
+        "body": [
+            "sound.play_advanced(str id, str sound_name, val volume, val pitch)"
+        ],
+        "description": "idk"
+    },
+    "Sound Edit": {
+        "prefix": "sound.edit",
+        "body": [
+            "sound.edit(str id, val volume, val pitch)"
+        ],
+        "description": "idk"
+    },
+    "Wait": {
+        "prefix": "wait",
+        "body": [
+            "wait (val value)"
+        ],
+        "description": "waits for value amount of time"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "if (${1:condition})",
+            "\t$0",
+            "endif"
+        ],
+        "description": "Checks condition"
+    },
+    "if equal": {
+        "prefix": "if equal",
+        "body": [
+            "if (${1:condition} = )",
+            "\t$0",
+            "endif"
+        ],
+        "description": "Checks condition"
+    },
+    "if Less Than": {
+        "prefix": "if less than",
+        "body": [
+            "if (${1:condition} < )",
+            "\t$0",
+            "endif"
+        ],
+        "description": "Checks condition"
+    },
+    "if Greater Than": {
+        "prefix": "if greater than",
+        "body": [
+            "if (${1:condition} > )",
+            "\t$0",
+            "endif"
+        ],
+        "description": "Checks condition"
+    },
+    "Forever": {
+        "prefix": "forever",
+        "body": [
+            "forever",
+            "\t$0",
+            "endforever"
+        ],
+        "description": "loops forever"
+    },
+    "While": {
+        "prefix": "while",
+        "body": [
+            "while (${1:condition})",
+            "\t$0",
+            "endwhile"
+        ],
+        "description": "loops while condition is true"
+    },
+    "While Less Than": {
+        "prefix": "while less than",
+        "body": [
+            "while (${1:condition} < )",
+            "\t$0",
+            "endwhile"
+        ],
+        "description": "loops while condition is true"
+    },
+    "While Greater Than": {
+        "prefix": "while greater than",
+        "body": [
+            "while (${1:condition} > )",
+            "\t$0",
+            "endwhile"
+        ],
+        "description": "loops while condition is true"
+    },
+    "While Equal To": {
+        "prefix": "while equal to",
+        "body": [
+            "while (${1:condition} = )",
+            "\t$0",
+            "endwhile"
+        ],
+        "description": "loops while condition is true"
+    },
+    "Function": {
+        "prefix": "func",
+        "body": [
+            "func.func_start(str ${1:func_name}).in",
+            "\t$0",
+            "func.func_end().out"
+        ],
+        "description": "creates a function (from Droplet Utils)"
+    },
+    "Function Call": {
+        "prefix": "func.call_func",
+        "body": [
+            "func.call_func(str name)"
+        ],
+        "description": "calls a function (from Droplet Utils)"
+    },
+    "Function Set Inputs": {
+        "prefix": "func.set_func_inputs",
+        "body": [
+            "func.set_func_inputs(str input1, str input2, str input3)"
+        ],
+        "description": "sets the functions inputs (from Droplet Utils)"
+    },
+    "Function Report Inputs": {
+        "prefix": "func.report_inputs",
+        "body": [
+            "func.report_inputs(val input_num)",
+            "var variable = data_return"
+        ],
+        "description": "returns the functions inputs (from Droplet Utils)"
+    },
+    "Function Return": {
+        "prefix": "func.return",
+        "body": [
+            "func.return()"
+        ],
+        "description": "returns the function data (from Droplet Utils)"
+    },
+}

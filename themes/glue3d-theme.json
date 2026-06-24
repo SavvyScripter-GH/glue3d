@@ -1,0 +1,135 @@
+{
+    "name": "Glue3D Colors",
+    "type": "dark",
+    "colors": {
+        "editor.foreground": "#FFFFFF"
+    },
+    "tokenColors": [
+        {
+            "scope": "keyword.control.glue3d",
+            "settings": {
+                "foreground": "#e8a41d"
+            }
+        },
+        {
+            "scope": "support.class.game.glue3d",
+            "settings": {
+                "foreground": "#1dec56"
+            }
+        },
+        {
+            "scope": "support.class.object.glue3d",
+            "settings": {
+                "foreground": "#d5ec62"
+            }
+        },
+        {
+            "scope": "support.class.math.glue3d",
+            "settings": {
+                "foreground": "#06a7ec"
+            }
+        },
+        {
+            "scope": "support.class.physics.glue3d",
+            "settings": {
+                "foreground": "#92dcdc"
+            }
+        },
+        {
+            "scope": "support.class.model.glue3d",
+            "settings": {
+                "foreground": "#ec3456"
+            }
+        },
+        {
+            "scope": "support.class.terminal.glue3d",
+            "settings": {
+                "foreground": "#3dac06"
+            }
+        },
+        {
+            "scope": "support.class.interface.glue3d",
+            "settings": {
+                "foreground": "#ababab"
+            }
+        },
+        {
+            "scope": "support.class.file.glue3d",
+            "settings": {
+                "foreground": "#409cec"
+            }
+        },
+        {
+            "scope": "support.class.editor.glue3d",
+            "settings": {
+                "foreground": "#b21dec"
+            }
+        },
+        {
+            "scope": "support.class.sound.glue3d",
+            "settings": {
+                "foreground": "#e78de7"
+            }
+        },
+        {
+            "scope": "support.function.wait.glue3d",
+            "settings": {
+                "foreground": "#eaa61d"
+            }
+        },
+        {
+            "scope": "storage.type.list.glue3d",
+            "settings": {
+                "foreground": "#ca0606"
+            }
+        },
+        {
+            "scope": "comment.line.double-slash.glue3d",
+            "settings": {
+                "foreground": "#888888"
+            }
+        },
+        {
+            "scope": "support.class.time.glue3d",
+            "settings": {
+                "foreground": "#0662a7"
+            }
+        },
+        {
+            "scope": "support.class.func.glue3d",
+            "settings": {
+                "foreground": "#77e7e7"
+            }
+        },
+        {
+            "scope": "entity.name.type.val.glue3d",
+            "settings": {
+                "foreground": "#62ecec"
+            }
+        },
+        {
+            "scope": "entity.name.type.var.glue3d",
+            "settings": {
+                "foreground": "#ec6240"
+            }
+        },
+        {
+            "scope": "entity.name.type.str.glue3d",
+            "settings": {
+                "foreground": "#ec4b90"
+            }
+        },
+        {
+            "scope": "keyword.operator.word.glue3d",
+            "settings": {
+                "foreground": "#06ce27"
+            }
+        },
+        {
+            "scope": "keyword.operator.glue3d",
+            "settings": {
+                "foreground": "#06ce27"
+            }
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Glue3D",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#operators"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.glue3d",
+					"match": "//.*$"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.glue3d",
+					"match": "\\b(if|endif|for|endfor|forever|endforever|while|endwhile|repeat|endrepeat)\\b"
+				},
+				{
+					"name": "keyword.operator.word.glue3d",
+					"match": "\\b(in)\\b"
+				},
+				{
+					"name": "support.class.game.glue3d",
+					"match": "\\b(game)\\b"
+				},
+				{
+					"name": "support.class.physics.glue3d",
+					"match": "\\b(physics)\\b"
+				},
+				{
+					"name": "support.class.model.glue3d",
+					"match": "\\b(model)\\b"
+				},
+				{
+					"name": "support.class.file.glue3d",
+					"match": "\\b(file)\\b"
+				},
+				{
+					"name": "support.class.editor.glue3d",
+					"match": "\\b(editor)\\b"
+				},
+				{
+					"name": "support.class.sound.glue3d",
+					"match": "\\b(sound)\\b"
+				},
+				{
+					"name": "support.class.terminal.glue3d",
+					"match": "\\b(terminal)\\b"
+				},
+				{
+					"name": "support.class.interface.glue3d",
+					"match": "\\b(interface)\\b"
+				},
+				{
+					"name": "support.function.wait.glue3d",
+					"match": "\\b(wait)\\b"
+				},
+				{
+					"name": "storage.type.list.glue3d",
+					"match": "\\b(list)\\b"
+				},
+				{
+					"name": "support.class.math.glue3d",
+					"match": "\\b(math)\\b"
+				},
+				{
+					"name": "support.class.object.glue3d",
+					"match": "\\b(object)\\b"
+				},
+				{
+					"name": "support.class.time.glue3d",
+					"match": "\\b(time)\\b"
+				},
+				{
+					"name": "support.class.func.glue3d",
+					"match": "\\b(func)\\b"
+				},
+				{
+					"name": "entity.name.type.val.glue3d",
+					"match": "\\b(val)\\b"
+				},
+				{
+					"name": "entity.name.type.var.glue3d",
+					"match": "\\b(var)\\b"
+				},
+				{
+					"name": "entity.name.type.str.glue3d",
+					"match": "\\b(str)\\b"
+				},
+				{
+					"name": "keyword.operator.glue3d",
+					"match": "(=|<|>|-)"
+				}
+			]
+		}
+	},
+	"scopeName": "source.glue3d"
+}

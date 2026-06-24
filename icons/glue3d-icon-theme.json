@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "glue3d-file": {
+            "iconPath": "./glue3d-icon.png"
+        }
+    },
+    "fileExtensions": {
+        "glue3d": "glue3d-file"
+    }
+}

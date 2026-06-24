@@ -1,0 +1,89 @@
+{
+  "name": "glue3d",
+  "publisher": "Glue3D",
+  "repository": {
+    "url": "https://github.com/SavvyScripter-GH/Glue3D-vscode"
+  },
+  "displayName": "Glue3D",
+  "main": "./snippets/extension.js",
+  "description": "glue3d support for turbowarp",
+  "version": "2.0.1",
+  "icon": "icons/glue3d-icon.png",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "activationEvents": [
+    "onLanguage:glue3d",
+    "onMarkdownRenderer"
+  ],
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "glue3d",
+        "aliases": [
+          "Glue3D",
+          "glue3d"
+        ],
+        "extensions": [
+          ".glue3d"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/glue3d-icon.png",
+          "dark": "./icons/glue3d-icon.png"
+        }
+      },
+      {
+        "id": "glue3d-markdown-injection"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "glue3d",
+        "scopeName": "source.glue3d",
+        "path": "./syntaxes/glue3d.tmLanguage.json"
+      },
+      {
+        "language": "glue3d-markdown-injection",
+        "scopeName": "markdown.glue3d.codeblock",
+        "path": "./syntaxes/glue3d-markdown-injection.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.glue3d": "glue3d"
+        }
+      }
+    ],
+    "themes": [
+      {
+        "label": "Glue3D",
+        "uiTheme": "vs-dark",
+        "path": "./themes/glue3d-theme.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "glue3d",
+        "path": "./snippets/glue3d.code-snippets"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "glue3d-icons",
+        "label": "Glue3D Icons",
+        "path": "./icons/glue3d-icon-theme.json"
+      }
+    ]
+  },
+  "configurationDefaults": {
+    "[glue3d]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnPaste": true,
+      "editor.defaultFormatter": "Glue3D.glue3d"
+    }
+  }
+}

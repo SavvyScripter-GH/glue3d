@@ -1,0 +1,176 @@
+//test made with glue3d text editor
+object.go_to(val x, val y, val z, val speed)
+object.go_to_object(str object, val speed)
+object.move(val 0, val 0, val 0)
+object.move_dir(val dir, val distance)
+object.rotate_to(val rx, val ry, val rz, val speed)
+object.rotate_toward(str object, val speed)
+object.turn(val 0, val 0, val 0)
+object.scale_to(val sx, val sy, val sz, val speed)
+object.distance(str object)
+var variable = data_return
+object.clone(str script)
+object.delete()
+object.new_attribute(str object, val name, val value)
+object.get_data(str object, str data)
+var variable = data_return
+object.edit_data(str object, str data, val value)
+physics.include_physics()
+physics.set_factors(val gravity, val jump, val friction, val bounce)
+physics.hitbox(val x, val y, val z)
+physics.surface_collision(str true)
+physics.hitbox_collision(str true)
+physics.add_force(str axis, val force)
+physics.dir_force(val direction, val distance)
+physics.on_floor()
+var variable = data_return
+physics.collided()
+var variable = data_return
+physics.physics_tick()
+model.set_model(str model)
+model.refresh_models()
+model.set_bone(str bone)
+model.rotate_bone(val 0, val 0, val 0, str bone)
+model.turn_bone(val 0, val 0, val 0, str bone)
+model.ease(val value)
+game.include_game()
+game.movement_type(str type)
+game.movement(val speed, val turn_speed)
+physics.physics_tick()
+game.key_pressed(str key)
+var variable = data_return
+game.get_key()
+var variable = data_return
+game.set_camera(str camera)
+game.camera_1st(str object, val elevation)
+game.camera_3rd(str object, val distance, val speed)
+game.fov(str fov)
+math.random(val a, val b)
+var variable = data_return
+math.add(val a, val b)
+var variable = data_return
+math.subtract(val a, val b)
+var variable = data_return
+math.multiply(val a, val b)
+var variable = data_return
+math.divide(val a, val b)
+var variable = data_return
+math.modulo(val a, val b)
+var variable = data_return
+math.power(val a, val b)
+var variable = data_return
+math.sqrt(val a)
+var variable = data_return
+math.interpolate(val a, val b, val c)
+var variable = data_return
+math.clamp(val a, val min, val max)
+var variable = data_return
+math.sin(val a)
+var variable = data_return
+math.cos(val a)
+var variable = data_return
+math.tan(val a)
+var variable = data_return
+math.log(val a)
+var variable = data_return
+math.asin(val a)
+var variable = data_return
+math.acos(val a)
+var variable = data_return
+math.atan(val a)
+var variable = data_return
+math.floor(val a)
+var variable = data_return
+math.abs(val a)
+var variable = data_return
+math.letter(val a, str b)
+var variable = data_return
+math.join(str a, str b)
+var variable = data_return
+math.and(val a, val b)
+var variable = data_return
+math.or(val a, val b)
+var variable = data_return
+math.xor(val a, val b)
+var variable = data_return
+math.not(val a)
+var variable = data_return
+math.greater_than(val a, val b)
+var variable = data_return
+math.less_than(val a, val b)
+var variable = data_return
+math.equals(val a, val b)
+var variable = data_return
+terminal.clear()
+terminal.print(str hello_world, val color)
+terminal.print(var variable, val color)
+terminal.print(val value, val color)
+var variable = val value
+var variable = data_return
+var variable += val value
+var variable -= val value
+var variable *= val value
+list.create_list(str name, str file)
+list.clear(str name)
+list.add_item(str listname, str value)
+list.add_item(str listname, str value)
+list.edit_item(str list, val index, str newvalue)
+list.delete_item(str list, val index)
+list.read(str list, val index)
+var variable = data_return
+list.read_list(str list)
+var variable = data_return
+list.length(str list)
+interface.set_id(str costume_id)
+interface.text(str text)
+interface.set_pos(val x, val y)
+interface.dir(val direction)
+interface.scale(val scale)
+interface.get_mouse_axis(str axis)
+interface.clickable(str true)
+interface.clicked()
+var variable = data_return
+interface.clicked()
+var variable = data_return
+interface.set_ghost(val value)
+file.create_file(str name, str true)
+file.delete_file(str name)
+file.move_item(str name, str filename)
+file.copy_item(str name, str filename, str copyname)
+file.delete_item(str name)
+file.create_item(str type, str name, str file)
+sound.play(str sound_name)
+sound.stereo()
+sound.mono()
+sound.play_advanced(str id, str sound_name, val volume, val pitch)
+sound.edit(str id, val volume, val pitch)
+wait (val value)
+if (var variable = val value)
+endif
+if (var variable > val value)
+endif
+if (var variable < val value)
+endif
+forever
+endforever
+while (var variable < val value)
+endwhile
+while (var variable = val value)
+endwhile
+while (var variable > val value)
+endwhile
+if str that = str this
+    if str this = str that
+        terminal.print(str gay people)
+    endif
+endif
+if str that = str this
+terminal.print(str ga)
+endif
+if (str a != str b)
+    
+endif
+//note aaaaa
+func.func_start(str func_name).in
+    
+func.func_end().out
