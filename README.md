@@ -62,10 +62,10 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 > 4.  **Physics Check:** Remember that if you want gravity and collisions to work, you must call `physics.include_physics()` at the start of your script!
 
 ---
-## Other Useful Information
->Official Glue3D documentation can be found [**here**](https://gl00b.github.io/GLUE3D/)
+## Other Useful Information <a name="info"/></a>
+>Official Glue3D documentation can be found [**here**](https://gl00b.github.io/GLUE3D/) <a name="docs"/></a>
 >
->Community Wiki page can be found [**here**](https://wiki.glue3d.net/Main_Page)
+>Community Wiki page can be found [**here**](https://wiki.glue3d.net/Main_Page) <a name="wiki"/></a>
 
 ---
 ## Example Script <a name="examples"/></a>
