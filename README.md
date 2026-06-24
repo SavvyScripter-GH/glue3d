@@ -6,8 +6,13 @@ Glue3D is a custom scripting language for game and 3D project development, desig
 > *Currently in Beta.*
 
 > [!IMPORTANT]
-> You need to use **Droplet Utils** to import `.glue3d` files.
+> You need to use **[Glue3D CE](https://github.com/Droplets21/Glue3D-Community-Edition)** to import `.glue3d` files.
 
+- [Downloading Glue3D](#download)
+- [Additional Info](#info)
+    - [Docs](#docs)
+    - [Wiki](#wiki)
+- [Categories](#categories)
 ---
 
 ## Features
@@ -46,17 +51,22 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 ---
 
 > [!TIP]
-> ## Help & Getting Started
+> ## Help & Getting Started <a name="download"/>
 > 
 > New to Glue3D? Here are a few tips to get you scripting quickly:
 > 
-> 1.  **Use Autocomplete:** Start typing a module name (like `object.` or > `math.`) and the editor will show you all available commands and what they do.
-> 2.  **Using Variables:** `val` is used for numbers, `str` is for text, and > `var` is used to store data or the results of functions (often using > `data_return`).
-> 3.  **Debugging:** If something isn't working, use `terminal.print(var > variable, val color)` to check the values of your variables in real-time.
-> 4.  **Physics Check:** Remember that if you want gravity and collisions to > work, you must call `physics.include_physics()` at the start of your script!
+> 1.  **Use Autocomplete:** Start typing a module name (like `object.` or  `math.`) and the editor will show you all available commands and what they do.
+> 2.  **Using Variables:** `val` is used for numbers, `str` is for text, and `var` is used to store data or the results of functions (often using `data_return`).
+> 3.  **Debugging:** If something isn't working, use `terminal.print(var  variable, val color)` to check the values of your variables in real-time.
+> 4.  **Physics Check:** Remember that if you want gravity and collisions to work, you must call `physics.include_physics()` at the start of your script!
 
 ---
+## Other Useful Information
+>Official Glue3D documentation can be found [**here**](https://gl00b.github.io/GLUE3D/)
+>
+>Community Wiki page can be found [**here**](https://wiki.glue3d.net/Main_Page)
 
+---
 ## Example Script
 
 Here is a basic example showing loops, game logic, and sound:
