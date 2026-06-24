@@ -45,7 +45,7 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 
 ---
 
-[!TIP]
+> [!TIP]
 > ## Help & Getting Started
 > 
 > New to Glue3D? Here are a few tips to get you scripting quickly:
