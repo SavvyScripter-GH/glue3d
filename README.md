@@ -2,16 +2,17 @@
 
 Glue3D is a custom scripting language for game and 3D project development, designed for clean structure and readable syntax.
 
+> [!NOTE]
+> This is currently in Beta
+
 > [!IMPORTANT]
 > You need to use Droplets Utils to import .glue3d files
-> Currently in Beta
-
 ---
 
 ## Features
 
 - Custom syntax highlighting for `.glue3d` files
-- Autocomplete snippets for core engine blocks
+- Autocomplete snippets for engine blocks
 - Structured control flow:
   - `for` / `endfor`
   - `if` / `endif`
@@ -27,48 +28,22 @@ Glue3D is a custom scripting language for game and 3D project development, desig
   - `file`
 - Built-in `wait` keyword
 - Comment support (`// comment`)
-
+- auto indent
 ---
 
 ## Example
 
-```py
-// Basic example
-
-for i in range 10
-    game.start()
-    physics.update()
-    wait 1
-endfor
-
-if score > 100
-    sound.play(str "victory_chime")
-endif
+```js
+//vsc made with glue3d-vscode
+//
+//loops 10 times and prints var 'i' each time
+var i = val 0 
+var range = val 10 
+while (var i < var range) 
+    terminal.print(var i, val 20) 
+    var i += val 1 
+endwhile
 ```
-```glue3d
-// Basic example
-
-for i in range 10
-    game.start()
-    physics.update()
-    wait 1
-endfor
-
-if score > 100
-    sound.play(str "victory_chime")
-endif
-```
-```mermaid
-flowchart LR
-  Sleep[Sleep] --> Wake{Awake?}
-  Wake -->|No| Sleep
-  Wake -->|Hungry| Snack[Get treat]
-  Wake -->|Not in sunbeam| Move[Move to sunbeam]
-  Wake -->|Human is typing| Keyboard[Sleep on keyboard]
-  Snack --> Sleep
-  Move --> Sleep
-  Keyboard --> Sleep
-```
-
-
-![glue3d logo](https://glue3d.net/assets/logo.png)
+<p align="center">
+  <img src="./icons/logo.png" alt="Alt Text">
+</p>

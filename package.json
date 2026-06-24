@@ -13,8 +13,7 @@
     "vscode": "^1.70.0"
   },
   "activationEvents": [
-    "onLanguage:glue3d",
-    "onMarkdownRenderer"
+    "onLanguage:glue3d"
   ],
   "categories": [
     "Programming Languages"
@@ -35,9 +34,6 @@
           "light": "./icons/glue3d-icon.png",
           "dark": "./icons/glue3d-icon.png"
         }
-      },
-      {
-        "id": "glue3d-markdown-injection"
       }
     ],
     "grammars": [
@@ -45,17 +41,6 @@
         "language": "glue3d",
         "scopeName": "source.glue3d",
         "path": "./syntaxes/glue3d.tmLanguage.json"
-      },
-      {
-        "language": "glue3d-markdown-injection",
-        "scopeName": "markdown.glue3d.codeblock",
-        "path": "./syntaxes/glue3d-markdown-injection.json",
-        "injectTo": [
-          "text.html.markdown"
-        ],
-        "embeddedLanguages": {
-          "meta.embedded.block.glue3d": "glue3d"
-        }
       }
     ],
     "themes": [
