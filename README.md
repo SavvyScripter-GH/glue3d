@@ -2,48 +2,74 @@
 
 Glue3D is a custom scripting language for game and 3D project development, designed for clean structure and readable syntax.
 
-> [!NOTE]
-> This is currently in Beta
-
 > [!IMPORTANT]
-> You need to use Droplets Utils to import .glue3d files
+> You need to use **Droplet Utils** to import `.glue3d` files. 
+> *Currently in Beta.*
+
 ---
 
 ## Features
 
-- Custom syntax highlighting for `.glue3d` files
-- Autocomplete snippets for engine blocks
-- Structured control flow:
-  - `for` / `endfor`
-  - `if` / `endif`
-  - `repeat` / `endrepeat`
-- Engine modules:
-  - `game`
-  - `physics`
-  - `model`
-  - `sound`
-  - `interface`
-  - `editor`
-  - `terminal`
-  - `file`
-- Built-in `wait` keyword
-- Comment support (`// comment`)
-- auto indent
+- Custom dark theme and syntax highlighting for `.glue3d` files.
+- Auto-indentation and bracket matching.
+- Autocomplete snippets for core engine blocks.
+- Structured control flow (`if`, `while`, `for`, `forever`, `repeat`).
+
 ---
 
-## Example
+## Module Categories
 
-```js
-//vsc made with glue3d-vscode
-//
-//loops 10 times and prints var 'i' each time
-var i = val 0 
-var range = val 10 
-while (var i < var range) 
-    terminal.print(var i, val 20) 
-    var i += val 1 
-endwhile
-```
-<p align="center">
-  <img src="./icons/logo.png" alt="Alt Text">
-</p>
+Glue3D is organized into easy-to-use prefixes so you always know what you are controlling:
+
+### **World & Physics**
+* `game.` - Manage cameras (1st/3rd person), FOV, and player keyboard inputs.
+* `physics.` - Set gravity, friction, hitboxes, and apply directional forces.
+* `object.` - Move, rotate, scale, clone, and delete items in your world.
+* `model.` - Assign 3D models and rotate/turn specific skeleton bones.
+
+### **Logic & Math**
+* `math.` - Perform calculations (add, subtract, multiply, modulo) and advanced math (sin, cos, clamp, interpolate).
+* `func.` - Create custom functions with inputs and return data.
+* `val`, `var`, `str` - Store values, numbers, and text strings.
+
+### **UI & Media**
+* `interface.` - Create clickable menus, set UI text, and track mouse movement.
+* `sound.` - Play and edit audio clips with custom volume and pitch.
+* `terminal.` - Print variables and strings to the console for debugging.
+
+### **Data Management**
+* `list.` - Create and read arrays of data.
+* `file.` - Create, copy, delete, and move files for saving game states.
+
+---
+
+[!TIP]
+> ## Help & Getting Started
+> 
+> New to Glue3D? Here are a few tips to get you scripting quickly:
+> 
+> 1.  **Use Autocomplete:** Start typing a module name (like `object.` or > `math.`) and the editor will show you all available commands and what they do.
+> 2.  **Using Variables:** `val` is used for numbers, `str` is for text, and > `var` is used to store data or the results of functions (often using > `data_return`).
+> 3.  **Debugging:** If something isn't working, use `terminal.print(var > variable, val color)` to check the values of your variables in real-time.
+> 4.  **Physics Check:** Remember that if you want gravity and collisions to > work, you must call `physics.include_physics()` at the start of your script!
+
+---
+
+## Example Script
+
+Here is a basic example showing loops, game logic, and sound:
+
+```glue3d
+// Basic example: Game Loop
+
+for i in range 10
+    game.start()
+    physics.physics_tick()
+    wait 1
+endfor
+
+// Check win condition
+if score > 100
+    sound.play(str "victory_chime")
+    terminal.print(str "You Win!", val 1)
+endif
