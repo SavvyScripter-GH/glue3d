@@ -19,7 +19,7 @@ Glue3D is a custom scripting language for game and 3D project development, desig
 ## Features
 
 - Custom dark theme and syntax highlighting for `.glue3d` files.
-- Auto-indentation and bracket matching.
+- Auto indentation and bracket matching.
 - Autocomplete snippets for core engine blocks.
 - Structured control flow (`if`, `while`, `for`, `forever`, `repeat`).
 
@@ -27,7 +27,7 @@ Glue3D is a custom scripting language for game and 3D project development, desig
 
 ## Module Categories <a name="categories"/></a>
 
-Glue3D is organized into easy-to-use prefixes so you always know what you are controlling:
+Glue3D is organized into easy to use prefixes so you always know what you are controlling:
 
 ### **World & Physics**
 * `game.` - Manage cameras (1st/3rd person), FOV, and player keyboard inputs.
@@ -53,7 +53,7 @@ Glue3D is organized into easy-to-use prefixes so you always know what you are co
 
 > [!TIP]
 > ## Help & Getting Started <a name="download"/></a>
-> ###### I would reccomend you download Glue3D Community Edition from [**here**](https://github.com/Droplets21/Glue3D-Community-Edition) as it is frequently updated and has Glue3D-vscode Syntax support
+> ###### I would reccomend you download Glue3D Community Edition from [**here**](https://github.com/Droplets21/Glue3D-Community-Edition) as it is frequently updated, adds more features, and we support their syntax.
 > New to Glue3D? Here are a few tips to get you scripting quickly:
 > 
 > 1.  **Use Autocomplete:** Start typing a module name (like `object.` or  `math.`) and the editor will show you all available commands and what they do.
